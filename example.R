@@ -1,15 +1,18 @@
 library(RechartsCustom)
 library(shiny)
 library(shinydashboard)
+#柱形图或折线图数据
 data_line_bar <- data.frame('日期'=c('3-1','3-2','3-3','3-4','3-5'),
                             '最高'=c(35,45,40,35,55),
                             '中间'=c(25,35,30,25,45),
                             '最低'=c(15,25,20,15,35))
+#饼图数据
 data_pie <- data.frame('直接访问'=1,
                        'SEO'=2,
                        'SEM'=3,
                        'REF'=1
 )
+#漏斗图数据
 data_funnel <- data.frame('点击_22222'=100,
                           '下单_111112'=30,
                           '支付1111'=20,
