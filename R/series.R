@@ -3,7 +3,7 @@ series_rectangular <- function(data,type,itemStyle=FALSE){
   list_name <- colnames(data)
   colnames(data) <- NULL
   data <- as.list(data)
-  #type可以使单个值line或者bar,也可以是c("line","bar")
+  #type可以使单个值line或者bar,或者是c("line","bar")
   if(length(type)==1){type <- rep(type,length(data))}
   for(i in seq(length(data))){
     #加一个0是为了保证当只有一列的时候，转jason的时候可以带上[]方括号
